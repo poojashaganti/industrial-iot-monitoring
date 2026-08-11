@@ -1,50 +1,55 @@
-# Industrial IoT Monitoring System with AI Anomaly Detection
+# Industrial IoT Monitoring System
 
 ## 📌 Project Overview
 
-This project is an Industrial IoT monitoring system designed to collect, analyze, visualize, and monitor machine sensor data.
+An Industrial IoT monitoring system developed to simulate machine sensor data, monitor machine health, detect abnormal operating conditions using AI, and estimate maintenance risk through an interactive Streamlit dashboard.
 
-The system simulates industrial machine sensors such as temperature, pressure, vibration, RPM, and electrical current.
-
-It combines traditional rule-based monitoring with Machine Learning-based anomaly detection to identify unusual machine behavior.
-
-An interactive Streamlit dashboard is used to visualize sensor readings, AI anomaly results, anomaly scores, and maintenance risk levels.
+The project combines sensor simulation, rule-based monitoring, machine-learning anomaly detection, data analysis, and real-time visualization.
 
 ---
 
-## 🎯 Project Objectives
+## 🎯 Objectives
 
-- Simulate industrial machine sensor data
-- Store sensor readings in CSV format
-- Analyze sensor data using Python
-- Visualize machine parameters
-- Detect abnormal machine behavior using Machine Learning
-- Compare rule-based monitoring with AI anomaly detection
-- Calculate anomaly scores
-- Classify maintenance risk
-- Display results using an interactive dashboard
+- Simulate industrial machine sensor readings
+- Monitor machine operating conditions
+- Detect abnormal sensor behavior
+- Compare rule-based monitoring with AI-based anomaly detection
+- Estimate machine maintenance risk
+- Visualize machine health through an interactive dashboard
 
 ---
 
-## 🏭 System Architecture
+## 🏭 Sensors Monitored
+
+The system monitors five major industrial parameters:
+
+- 🌡️ Temperature
+- 📊 Pressure
+- 📳 Vibration
+- ⚙️ RPM
+- ⚡ Current
+
+---
+
+## 🤖 AI Anomaly Detection
+
+The system uses machine-learning based anomaly detection to identify unusual combinations of sensor values.
+
+The AI pipeline includes:
+
+1. Loading sensor data
+2. Selecting relevant sensor features
+3. Preparing the feature matrix
+4. Training the anomaly detection model
+5. Generating anomaly predictions
+6. Calculating anomaly scores
+7. Comparing AI results with rule-based machine status
+
+### AI Features
 
 ```text
-Industrial Sensor Simulation
-            ↓
-      Sensor Data CSV
-            ↓
-     Data Analysis
-            ↓
-    Data Visualization
-            ↓
-   AI Feature Extraction
-            ↓
-    Isolation Forest
-            ↓
-    Anomaly Detection
-            ↓
-      Anomaly Score
-            ↓
-    Maintenance Risk
-            ↓
-    Streamlit Dashboard
+Temperature
+Pressure
+Vibration
+RPM
+Current
